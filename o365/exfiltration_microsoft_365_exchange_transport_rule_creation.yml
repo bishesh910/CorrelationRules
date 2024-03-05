@@ -19,19 +19,19 @@
   frequency: 60
   cache:
     - allOf:
-        - field: logx.o365.Workload
+        - field: event.provider
           operator: "=="
           value: Exchange
-        - field: logx.o365.Operation
+        - field: event.action
           operator: "=="
           value: New-TransportRule
-        - field: logx.o365.ResultStatus
+        - field: event.outcome
           operator: "in"
-          value: Success,PartiallySucceeded,True
+          value: failure
       minCount: 1
       timeLapse: 60
       save:
-        - field: "logx.o365.UserId"
+        - field: "user.id"
           alias: "SourceUser"
-        - field: "logx.o365.ClientIP"
+        - field: "source.ip"
           alias: "SourceIP"

@@ -23,7 +23,7 @@
       minCount: 1
       timeLapse: 60
       save:
-        - field: "logx.o365.UserId"
+        - field: "user.id"
           alias: "SourceUser"
-        - field: "logx.o365.ClientIP"
+        - field: "source.ip"
           alias: "SourceIP"

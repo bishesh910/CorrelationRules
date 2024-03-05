@@ -25,7 +25,7 @@
         - field: event.action
           operator: "=="
           value: Remove-DlpPolicy
-        - field: event.outcome
+        - field: event.action
           operator: "in"
           value: success
       minCount: 1
