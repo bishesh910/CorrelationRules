@@ -24,7 +24,7 @@
   frequency: 60
   cache:
     - allOf:
-        - field: provider
+        - field: event.provider
           operator: "=="
           value: Exchange
         - field: event.action
