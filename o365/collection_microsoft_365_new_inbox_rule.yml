@@ -30,7 +30,7 @@
         - field: event.action
           operator: "=="
           value: New-InboxRule
-        - field: event.action
+        - field: event.outcome
           operator: "in"
           value: success
       minCount: 1
